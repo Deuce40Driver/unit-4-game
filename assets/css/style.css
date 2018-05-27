@@ -1,0 +1,19 @@
+body {
+    background-image: url("../images/background.jpg")
+}
+
+#randomNumber{
+    text-align: center;
+}
+
+#yourScore {
+    text-align: center;
+}
+
+#ruby {
+    background-image: url("../images/ruby.jpg")
+}
+
+#instructions {
+    padding-top: 40px;
+}

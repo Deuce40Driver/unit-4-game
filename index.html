@@ -18,7 +18,7 @@
 
         <div class = "row">
             <div class = "col-md-12">
-                <div class="jumbotron jumbotron-fluid">
+                <div id = "jumbotron" class="jumbotron jumbotron-fluid">
                     <div class="container">
                         <h1 class="display-4">Crystals Collector</h1>
                     </div>
@@ -28,7 +28,7 @@
         </div>
 
         <div class = "row">
-            <div id = "randomNumber" class = "col-md-4">
+            <div id = "randomNumber" class = "col-md-4" onload = "document.getElementById('number').innerHTML = getRndInteger(19,120)">
                 <div class="card">
                     <div class="card-header"><h4>Random Number</h4></div>
                     <div id = "number" class="card-body"></div>
@@ -89,19 +89,25 @@
     </div>
  
 
+    
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
 
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
 
-        var minNumber = 19;
-        var maxNumber = 120;
-        var randomNumber = Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
-        var minButton = 1;
-        var maxButton = 12;     
-        var buttonOne = Math.floor(Math.random() * (maxButton - minButton + 1)) + minButton;
-        var buttonTwo = Math.floor(Math.random() * (maxButton - minButton + 1)) + minButton;
-        var buttonThree = Math.floor(Math.random() * (maxButton - minButton + 1)) + minButton;
-        var buttonFour = Math.floor(Math.random() * (maxButton - minButton + 1)) + minButton;
+/*
+        var randomNumber = Math.floor(Math.random() * 101) + 19; 
 
+        var buttonOne = Math.floor(Math.random() * 12) + 1;
+        var buttonTwo = Math.floor(Math.random() * 12) + 1;
+        var buttonThree = Math.floor(Math.random() * 12) + 1;
+        var buttonFour = Math.floor(Math.random() * 12) + 1;
+
+        
 
         $(document).ready(function() {
             $("#number").html("<h5>" + randomNumber + "</h5>");
@@ -124,12 +130,11 @@
             
         })
 
+        */
+
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-       
+  
 </body>
 
 

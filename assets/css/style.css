@@ -2,6 +2,10 @@ body {
     background-image: url("../images/background.jpg")
 }
 
+#jumbotron {
+    background-color: transparent;
+}
+
 #randomNumber{
     text-align: center;
 }

@@ -1,17 +1,72 @@
 body {
-    background-image: url("../images/background.jpg")
+    background-image: url("../images/background.jpg");
+    text-align: center; 
 }
 
 #jumbotron {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    display: block;
+    margin: 0px;
+    margin-bottom: 30px;
+    padding: 2rem 1rem;
+    text-align: center;
+    width: 100%;
 }
 
-#randomNumber{
-    text-align: center;
+#title {
+    font-weight: bold;
 }
 
-#yourScore {
-    text-align: center;
+#score-board {
+    display: inline-flex;
+}
+
+#win-board {
+    width: 300px;
+}
+
+#loss-board {
+    width: 300px;
+}
+
+/*    */
+#game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.scoreboard {
+    height: 200px;
+    margin: 30px;
+    padding: 0px;
+    width: 300px; 
+}
+
+span {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.crystal-button {
+    align-self: center;
+    background-color: rgba(0, 0, 0, .25);
+    border-radius: 5px;
+    color: white;
+    height: 120px;
+    margin: 30px;
+    padding: 0px;
+    width: 120px;
+}
+
+img {
+    border-radius: 5px;
+    height: calc(100% - 5px);
+    margin: 0px;
+    padding: 0px;
+    width: calc(100% - 5px);
 }
 
 #ruby {
@@ -19,5 +74,56 @@ body {
 }
 
 #instructions {
+    margin-top: 30px;
     padding-top: 40px;
+}
+
+#modal {
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20vh;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+#modal-content {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+    width: 50vw;
+}
+
+#reveal {
+    display: inline-flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.reveal-square {
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px;
+    width: 50px;
+}
+
+#new-game-btn {
+    align-self: center;
+    background-color: tomato;
+    border: 1px solid black;
+    font-size: 24px;
+    font-weight: bold;
+    width: 300px;
 }
